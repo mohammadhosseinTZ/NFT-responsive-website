@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@1,300&family=Playpen+Sans&family=Rethink+Sans&family=Roboto+Condensed:wght@300&family=Rubik+Doodle+Shadow&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        /* font-family: "Roboto Condensed"; */
+    }
+    @media screen {
+        body{
+            color: #FFF;
+        }
+        /* card */
+        #hero>h1{
+            /* H4 - Work Sans */
+           
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 39.2px */
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        #hero>div:nth-of-type(1)>span:nth-of-type(1){
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 30.8px */
+            text-transform: capitalize;
+        }
+        #hero>div:nth-of-type(1)>div>span:nth-of-type(2){
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+        }
+        #hero>p{
+            /* Base(Body) - Work Sans */
+            /* font-family: Work Sans; */
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+            margin-bottom: 40px;
+        }
+        #hero>div:nth-last-of-type(1)>div>span:nth-of-type(1){
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 35.2px */
+            text-transform: capitalize;
+        }
+        #hero>div:nth-last-of-type(1)>div>span:nth-of-type(2){
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+        }
+        #trendingCollection>div:nth-of-type(1)>h2{
+            font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+   
+        }
+        #trendingCollection>div:nth-of-type(1)>p{
+            font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+        }
+        #trendingCollection>div:nth-last-of-type(1)>div:nth-of-type(2)>h3{
+            font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+
+
+
+        }
+        #trendingCollection>div:nth-last-of-type(1)>div:nth-of-type(1)>h3{
+            font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+
+
+
+        }
+        #trendingCollection>div:nth-last-of-type(1)>div:nth-of-type(3)>h3{
+            font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+
+
+
+        }
+        #trendingCollection>div:nth-last-of-type(1)>div:nth-of-type(2)>div>span{
+            font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+
+        }
+        #topRate>div:nth-of-type(1)>h3{
+            font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 39.2px */
+text-transform: capitalize;
+        }
+        #topRate>div:nth-of-type(1)>p{
+            /* font-family: Work Sans; */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+        }
+        
+    }
+    #topRate>div:nth-of-type(2)>div>div:nth-of-type(2)>span{
+        font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+text-transform: capitalize;
+    }
+   
+    @media screen and (min-width:768px) {
+    body{
+        color: #FFF;
+    }
+    #hero{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "h1 pic"
+                            "p pic"
+                            "btn pic"
+                            "num pic"
+        ;
+        column-gap: 30px;
+    }
+    #hero>h1{
+        grid-area: h1;
+        font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 45.6px */
+text-transform: capitalize;
+margin-bottom: 20px;
+    }
+    #hero>p{
+        grid-area: p;
+        font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+margin-bottom: 20px;
+    }
+    #hero>div:nth-of-type(1){
+        grid-area: pic;
+        align-self: start;
+    }
+    #hero>a{
+        width: 224px;
+        grid-area: btn;
+        margin:0 0 20px 0;
+    }
+    #hero>div:nth-last-of-type(1){
+        grid-area: num;
+    }
+    #hero>div:nth-last-of-type(1)>div>span:nth-of-type(1){
+        font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 35.2px */
+text-transform: capitalize;
+    }
+    #hero>div:nth-last-of-type(1)>div>span:nth-of-type(2){
+        font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+    }
+    #topRate{
+        display: grid;
+        grid-template-areas: "title btn"
+                            "p btn"
+                            "item item"
+                            
+                            ;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+    }
+    #topRate>div:nth-of-type(1)>h3{grid-area: title;}
+    #topRate>div:nth-of-type(1)>p{grid-area: p;}
+    #topRate>button{grid-area: btn;
+    /* width: 247px;
+    height: 60px; */
+    align-self: flex-end;
+    justify-self: end;
+   
+    margin-bottom: 40px;
+    }
+    #topRate>div:nth-of-type(2){
+        grid-area: item;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        
+    }
+    
+    
+    }
+    @media screen and (min-width:992px) {
+        
+    header{
+        color: #FFF;
+        text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    }
+    #hero>div:nth-last-of-type(1)>div>span:nth-of-type(1){
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 39.2px */
+        text-transform: capitalize;
+    }
+    #hero>div:nth-last-of-type(1)>div>span:nth-of-type(2){
+        font-size: 23.99px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 38.384px */
+        text-transform: capitalize;
+    }
+    #hero>p{
+        margin-bottom: 30px;
+    }
+    #hero>a{
+        margin-bottom: 30px
+    }
+    #topRate>div:nth-of-type(2){
+        
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        
+    }
+    #topRate>div:nth-of-type(2)>div{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #topRate>div:nth-of-type(2)>div>div:nth-of-type(1){
+        
+        max-height: 60px;
+    }
+    #topRate>div:nth-of-type(2)>div>div:nth-of-type(1)>img{
+        height: 100%;
+    }
+    #topRate>div:nth-of-type(2)>div>div:nth-of-type(2){
+        
+        text-align: center;
+    }
+    header{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: "div1 div2 div3"
+                            "div4 div4 div4"
+        ;
+    }
+    header>div:nth-of-type(1){grid-area: div1;}
+    header>div:nth-of-type(2){grid-area: div2;}
+    header>div:nth-of-type(3){grid-area: div3;}
+    header>div:nth-of-type(4){grid-area: div4;}
+    }
+}
+@layer components{
+    .btn_header{
+        @apply flex p-pbtnheader gap-[12px] bg-bgpurple rounded-[20px]
+    }
+}
